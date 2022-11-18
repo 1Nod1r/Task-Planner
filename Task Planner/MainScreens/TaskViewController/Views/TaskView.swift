@@ -27,7 +27,14 @@ class TaskView: BaseView {
         }
         
         table.snp.makeConstraints { make in
-            make.top.bottom.right.left.equalToSuperview()
+            make.edges.equalToSuperview()
+        }
+        
+        segmentedControl.snp.makeConstraints { make in
+            make.top.equalTo(126 + 32)
+            make.left.equalTo(23)
+            make.right.equalTo(-23)
+            make.height.equalTo(50)
         }
     }
     
@@ -38,8 +45,9 @@ class TaskView: BaseView {
         table.separatorStyle = .none
         table.backgroundColor = .clear
         table.register(TasksTableCell.self, forCellReuseIdentifier: TasksTableCell.defaultReuseIdentifier)
+        containerView.addSubview(table)
         self.table = table
-        containerView.addSubview(self.table)
+        
     }
     
     private func createContainerView(){
@@ -58,15 +66,10 @@ class TaskView: BaseView {
         segmentedControl.backgroundColor = .white
         segmentedControl.selectedSegmentTintColor = .AppColors.x2FD1C5
         segmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+        segmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.black], for: .normal)
         segmentedControl.addTarget(self, action: #selector(didChangeResult), for: .valueChanged)
-        addSubview(segmentedControl)
-        segmentedControl.snp.makeConstraints { make in
-            make.top.equalTo(126 + 32)
-            make.left.equalTo(23)
-            make.right.equalTo(-23)
-            make.height.equalTo(50)
-        }
         self.segmentedControl = segmentedControl
+        addSubview(segmentedControl)
     }
     
     @objc func didChangeResult(){

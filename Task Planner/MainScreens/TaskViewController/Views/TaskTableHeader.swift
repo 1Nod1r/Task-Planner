@@ -33,7 +33,7 @@ class TaskTableHeader: UIView {
         
         let button = UIButton.highLightedButton(title: "+ New Task", textColor: .AppColors.x2FD1C5, size: 16)
         self.newTask = button
-        addSubview(newTask)
+        addSubview(button)
         newTask.snp.makeConstraints { make in
             make.right.equalTo(-23)
             make.height.equalTo(19)

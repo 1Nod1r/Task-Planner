@@ -7,15 +7,22 @@
 
 import UIKit
 
+protocol MyTabControllerProtocol: AnyObject {
+    func tabLongPressed()
+}
+
+
 class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers = [
             generateVC(viewController: TasksViewController(), title: "Tasks", image: UIImage(systemName: "menucard")!, selectedImage: UIImage(systemName: "menucard.fill")!),
-            generateVC(viewController: UIViewController(), title: "Profile", image: UIImage(systemName: "person.circle")!, selectedImage: UIImage(systemName: "person.circle.fill")!),
+            generateVC(viewController: MyProfileViewController(), title: "Profile", image: UIImage(systemName: "person.circle")!, selectedImage: UIImage(systemName: "person.circle.fill")!),
             generateVC(viewController: UIViewController(), title: "Search", image: UIImage(systemName: "magnifyingglass")!, selectedImage: UIImage(systemName: "magnifyingglass")!)
         ]
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(astroButtonItemLongPressed(_:)))
+        tabBar.addGestureRecognizer(longPressRecognizer)
         setTabBarAppearance()
     }
     
@@ -53,5 +60,30 @@ class MainTabController: UITabBarController {
         tabBar.itemPositioning = .centered
     }
     
+    
+    @objc func astroButtonItemLongPressed(_ recognizer: UILongPressGestureRecognizer) {
+        guard recognizer.state == .began else { return }
+        guard let tabBar = recognizer.view as? UITabBar else { return }
+        guard let tabBarItems = tabBar.items else { return }
+        guard let viewControllers = viewControllers else { return }
+        guard tabBarItems.count == viewControllers.count else { return }
+
+        let loc = recognizer.location(in: tabBar)
+
+        for (index, item) in tabBarItems.enumerated() {
+            guard let view = item.value(forKey: "view") as? UIView else { continue }
+            guard view.frame.contains(loc) else { continue }
+
+            if let nc = viewControllers[index] as? UINavigationController {
+                if let vc = nc.viewControllers.first as? MyTabControllerProtocol {
+                    vc.tabLongPressed()
+                }
+            } else if let vc = viewControllers[index] as? MyTabControllerProtocol {
+                vc.tabLongPressed()
+            }
+
+            break
+        }
+    }
 
 }

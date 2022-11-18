@@ -28,16 +28,23 @@ class TasksViewController: UIViewController, MainViewProtocol {
         taskTableProvider.model = viewModel.model
         taskTableProvider.tableView = bindingView().table
         taskTableProvider.footerView = bindingView().tableFooter
-        bindingView().table.tableHeaderView = TaskTableHeader(frame: CGRect(x: 0,
-                                                                            y: 0,
-                                                                            width: bindingView().frame.width,
-                                                                            height: 72))
+        bindingView().table.tableHeaderView = TaskTableHeader(frame:
+                                                                CGRect(
+                                                                    x: 0,
+                                                                    y: 0,
+                                                                    width: bindingView().frame.width,
+                                                                    height: 72))
     }
 
     
     private func setup(){
         title = "Tasks"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "text.justify")!, style: .done, target: self, action: nil)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.AppColors.x00394C]
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "text.justify")!,
+            style: .done,
+            target: self,
+            action: nil)
         navigationItem.rightBarButtonItem?.tintColor = .black
     }
     

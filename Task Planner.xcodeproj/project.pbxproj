@@ -16,10 +16,20 @@
 		86167B0E2914F459005574F7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167B0D2914F459005574F7 /* BaseView.swift */; };
 		86167B102914F486005574F7 /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167B0F2914F486005574F7 /* MainViewProtocol.swift */; };
 		86167B122914F4E8005574F7 /* LoadingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167B112914F4E8005574F7 /* LoadingViewProtocol.swift */; };
+		8629CAE52924EA6D005DCEC9 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAE42924EA6D005DCEC9 /* MyProfileViewController.swift */; };
+		8629CAE72924EA91005DCEC9 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAE62924EA91005DCEC9 /* MyProfileView.swift */; };
+		8629CAEA2924EF94005DCEC9 /* MyProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAE92924EF94005DCEC9 /* MyProfileTableCell.swift */; };
+		8629CAEC2924FBB9005DCEC9 /* MyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAEB2924FBB9005DCEC9 /* MyProfileModel.swift */; };
+		8629CAEE2924FC54005DCEC9 /* MyProfileDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAED2924FC54005DCEC9 /* MyProfileDataProvider.swift */; };
+		8629CAF02924FCC7005DCEC9 /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629CAEF2924FCC7005DCEC9 /* MyProfileViewModel.swift */; };
 		8641D1E7291FD87000DBF857 /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D1E6291FD87000DBF857 /* UIButton + Ext.swift */; };
 		8641D1ED291FDF1900DBF857 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D1EC291FDF1900DBF857 /* TasksViewController.swift */; };
 		8641D1EF291FDF2900DBF857 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D1EE291FDF2900DBF857 /* TaskView.swift */; };
 		865E31E529212AEC002B2CB5 /* TaskTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E31E429212AEC002B2CB5 /* TaskTableHeader.swift */; };
+		86A53BEA29226C0B00F6CE64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BE929226C0B00F6CE64 /* MainViewController.swift */; };
+		86A53BEC29226C1500F6CE64 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BEB29226C1500F6CE64 /* ProfileView.swift */; };
+		86A53BEE29226E0100F6CE64 /* ProfilePopupVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BED29226E0100F6CE64 /* ProfilePopupVCViewController.swift */; };
+		86A53BF129226E2000F6CE64 /* ProfilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BF029226E2000F6CE64 /* ProfilePopup.swift */; };
 		86AB3E94291E544A0057E075 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB3E93291E544A0057E075 /* EducationView.swift */; };
 		86B33F45291E2AC4004E982E /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F44291E2AC4004E982E /* StackView.swift */; };
 		86B33F47291E2E85004E982E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F46291E2E85004E982E /* ContainerView.swift */; };
@@ -74,10 +84,20 @@
 		86167B0D2914F459005574F7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		86167B0F2914F486005574F7 /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 		86167B112914F4E8005574F7 /* LoadingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewProtocol.swift; sourceTree = "<group>"; };
+		8629CAE42924EA6D005DCEC9 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		8629CAE62924EA91005DCEC9 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		8629CAE92924EF94005DCEC9 /* MyProfileTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableCell.swift; sourceTree = "<group>"; };
+		8629CAEB2924FBB9005DCEC9 /* MyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileModel.swift; sourceTree = "<group>"; };
+		8629CAED2924FC54005DCEC9 /* MyProfileDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDataProvider.swift; sourceTree = "<group>"; };
+		8629CAEF2924FCC7005DCEC9 /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
 		8641D1E6291FD87000DBF857 /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
 		8641D1EC291FDF1900DBF857 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		8641D1EE291FDF2900DBF857 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		865E31E429212AEC002B2CB5 /* TaskTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableHeader.swift; sourceTree = "<group>"; };
+		86A53BE929226C0B00F6CE64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		86A53BEB29226C1500F6CE64 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		86A53BED29226E0100F6CE64 /* ProfilePopupVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopupVCViewController.swift; sourceTree = "<group>"; };
+		86A53BF029226E2000F6CE64 /* ProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopup.swift; sourceTree = "<group>"; };
 		86AB3E93291E544A0057E075 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		86B33F44291E2AC4004E982E /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		86B33F46291E2E85004E982E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
@@ -244,9 +264,31 @@
 			path = Utilits;
 			sourceTree = "<group>";
 		};
+		8629CAE32924EA5E005DCEC9 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8629CAE42924EA6D005DCEC9 /* MyProfileViewController.swift */,
+				8629CAEF2924FCC7005DCEC9 /* MyProfileViewModel.swift */,
+				8629CAEB2924FBB9005DCEC9 /* MyProfileModel.swift */,
+				8629CAED2924FC54005DCEC9 /* MyProfileDataProvider.swift */,
+				8629CAE82924EF82005DCEC9 /* MyProfileViews */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		8629CAE82924EF82005DCEC9 /* MyProfileViews */ = {
+			isa = PBXGroup;
+			children = (
+				8629CAE62924EA91005DCEC9 /* MyProfileView.swift */,
+				8629CAE92924EF94005DCEC9 /* MyProfileTableCell.swift */,
+			);
+			path = MyProfileViews;
+			sourceTree = "<group>";
+		};
 		8641D1E8291FDED600DBF857 /* MainScreens */ = {
 			isa = PBXGroup;
 			children = (
+				86A53BE829226BFA00F6CE64 /* MainViewController */,
 				8641D1E9291FDEE000DBF857 /* TaskViewController */,
 				86E23F1A291FFC1900470F48 /* MainTabController.swift */,
 			);
@@ -272,6 +314,26 @@
 				86167B0A2914F327005574F7 /* LaunchScreen */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		86A53BE829226BFA00F6CE64 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8629CAE32924EA5E005DCEC9 /* MyProfile */,
+				86A53BE929226C0B00F6CE64 /* MainViewController.swift */,
+				86A53BEB29226C1500F6CE64 /* ProfileView.swift */,
+				86A53BEF29226E1100F6CE64 /* ProfilePopup */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		86A53BEF29226E1100F6CE64 /* ProfilePopup */ = {
+			isa = PBXGroup;
+			children = (
+				86A53BED29226E0100F6CE64 /* ProfilePopupVCViewController.swift */,
+				86A53BF029226E2000F6CE64 /* ProfilePopup.swift */,
+			);
+			path = ProfilePopup;
 			sourceTree = "<group>";
 		};
 		86B33F48291E312C004E982E /* OnboardingScreen */ = {
@@ -462,21 +524,26 @@
 				86D56F8B2914F630009B995C /* UINavigationController + Ext.swift in Sources */,
 				86D56F912914F6DA009B995C /* LaunchView.swift in Sources */,
 				86D56F892914F61D009B995C /* String + Ext.swift in Sources */,
+				8629CAEC2924FBB9005DCEC9 /* MyProfileModel.swift in Sources */,
 				86D56F8D2914F642009B995C /* Userdefaults + Ext.swift in Sources */,
 				86F44A79291E5B3A00280EBA /* EducationTableCell.swift in Sources */,
 				8641D1EF291FDF2900DBF857 /* TaskView.swift in Sources */,
 				86B33F51291E3508004E982E /* PresentationView.swift in Sources */,
+				86A53BEE29226E0100F6CE64 /* ProfilePopupVCViewController.swift in Sources */,
 				86167AF92914F2AC005574F7 /* LaunchViewController.swift in Sources */,
+				86A53BEA29226C0B00F6CE64 /* MainViewController.swift in Sources */,
 				86B33F45291E2AC4004E982E /* StackView.swift in Sources */,
 				86D56F832914F5B7009B995C /* UIColor + Ext.swift in Sources */,
 				86D56F872914F5E1009B995C /* UIViewController + Ext.swift in Sources */,
 				86167AF52914F2AC005574F7 /* AppDelegate.swift in Sources */,
 				86D56F952914F89B009B995C /* DefaultImageView.swift in Sources */,
 				8641D1E7291FD87000DBF857 /* UIButton + Ext.swift in Sources */,
+				8629CAE72924EA91005DCEC9 /* MyProfileView.swift in Sources */,
 				86D56F8F2914F64F009B995C /* UIStackView.swift in Sources */,
 				86B33F4C291E3149004E982E /* OnboardingView.swift in Sources */,
 				86B33F56291E373A004E982E /* OnboardingViewController.swift in Sources */,
 				86167AF72914F2AC005574F7 /* SceneDelegate.swift in Sources */,
+				8629CAF02924FCC7005DCEC9 /* MyProfileViewModel.swift in Sources */,
 				86F6FB7A2921192F00B51416 /* TaskModel.swift in Sources */,
 				86AB3E94291E544A0057E075 /* EducationView.swift in Sources */,
 				86CB20A529151320003ABAA1 /* AppButton.swift in Sources */,
@@ -498,12 +565,17 @@
 				86167B0E2914F459005574F7 /* BaseView.swift in Sources */,
 				86F44A7E291E5D1700280EBA /* EducationTableDataProvider.swift in Sources */,
 				86B33F4F291E34F1004E982E /* PresentationViewController.swift in Sources */,
+				86A53BEC29226C1500F6CE64 /* ProfileView.swift in Sources */,
 				86B33F47291E2E85004E982E /* ContainerView.swift in Sources */,
 				86F6FB71292110FD00B51416 /* UIImage + Ext.swift in Sources */,
+				86A53BF129226E2000F6CE64 /* ProfilePopup.swift in Sources */,
 				86F44A7C291E5C5F00280EBA /* EducationModel.swift in Sources */,
 				86B33F54291E35ED004E982E /* EducationViewController.swift in Sources */,
 				86D56F9A2914F973009B995C /* UIFont + Ext.swift in Sources */,
+				8629CAE52924EA6D005DCEC9 /* MyProfileViewController.swift in Sources */,
 				86D56F7F2914F567009B995C /* ReusableView.swift in Sources */,
+				8629CAEE2924FC54005DCEC9 /* MyProfileDataProvider.swift in Sources */,
+				8629CAEA2924EF94005DCEC9 /* MyProfileTableCell.swift in Sources */,
 				86167B102914F486005574F7 /* MainViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

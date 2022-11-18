@@ -9,7 +9,13 @@ import UIKit
 
 class TaskTableDataProvider: NSObject, UITableViewDelegate, UITableViewDataSource {
 
-    var model: [TaskModel] = []
+    var model: [TaskModel] = [] {
+        didSet {
+            if tableView != nil {
+                tableView.reloadData()
+            }
+        }
+    }
     
     weak var footerView: UIView!
     
@@ -21,7 +27,7 @@ class TaskTableDataProvider: NSObject, UITableViewDelegate, UITableViewDataSourc
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,6 +46,16 @@ class TaskTableDataProvider: NSObject, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            model.remove(at: indexPath.row)
+        }
     }
     
 }

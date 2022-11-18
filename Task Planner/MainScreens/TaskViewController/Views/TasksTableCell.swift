@@ -76,37 +76,37 @@ class TasksTableCell: BaseTableCell, ReusableView {
         containerView.borderWidth = 1
         containerView.borderColor = .AppColors.x26BFBF
         self.containerView = containerView
-        addSubview(self.containerView)
+        addSubview(containerView)
     }
     
     private func createDetailImage(){
         let detailImage = DefaultImageView(imageName: "")
         self.detailImage = detailImage
-        containerView.addSubview(self.detailImage)
+        containerView.addSubview(detailImage)
     }
     
     private func createTitle(){
         let detailTitle = Label(txtColor: .AppColors.x242736, txtFont: UIFont(name: Almarai.almaraiBold, size: 16), txtLines: 1)
         self.title = detailTitle
-        containerView.addSubview(self.title)
+        containerView.addSubview(title)
     }
     
     private func createSubtitle(){
         let subtitle = Label(title: "Create a unique emotional story that describes better than words", txtColor: .AppColors.x585A66, txtFont: UIFont(name: Almarai.almaraiRegular, size: 12), txtLines: 0, txtAlignment: .left)
         self.subtitle = subtitle
-        containerView.addSubview(self.subtitle)
+        containerView.addSubview(subtitle)
     }
     
     private func createDateTitle(){
         let dateTitle = Label(title: "11:30 AM - 12:30 PM", txtColor: .AppColors.x9A9A9A.withAlphaComponent(0.9), txtFont: UIFont(name: Almarai.almaraiRegular, size: 12), txtLines: 0, txtAlignment: .left)
         self.dateTitle = dateTitle
-        containerView.addSubview(self.dateTitle)
+        containerView.addSubview(dateTitle)
     }
     
     private func createDetailsButton(){
         let detailsButton = UIButton.withImage(imageName: "box-1", systemImage: false, tintColor: nil)
         self.detailsButton = detailsButton
-        containerView.addSubview(self.detailsButton)
+        containerView.addSubview(detailsButton)
     }
     
     public func configure(with model: TaskModel){

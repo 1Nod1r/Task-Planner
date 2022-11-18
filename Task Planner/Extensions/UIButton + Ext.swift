@@ -12,7 +12,7 @@ extension UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.setTitleColor(textColor, for: .normal)
-        button.titleLabel?.font = UIFont(name: Almarai.almaraiBold, size: size)
+        button.titleLabel?.font = UIFont(name: Almarai.almaraiRegular, size: size)
         return button
     }
     

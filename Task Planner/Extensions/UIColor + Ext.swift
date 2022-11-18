@@ -30,6 +30,7 @@ extension UIColor {
 
 extension UIColor {
     struct AppColors {
+        static let x37313C = UIColor(hex: "37313C")
         static let x26BFBF = UIColor(hex: "26BFBF")
         static let xD8DEF3 = UIColor(hex: "D8DEF3")
         static let x242736 = UIColor(hex: "242736")

@@ -26,7 +26,12 @@ class AppTextField: UIView {
     }
     
     private func setup(){
-        textField.placeholder = "Type..."
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Type...",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray]
+        )
+        textField.tintColor = .black
+        textField.textColor = .black
         addSubview(textField)
         textField.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(23)
