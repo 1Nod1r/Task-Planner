@@ -16,10 +16,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let navVC = UINavigationController(rootViewController: LaunchViewController())
+        let navVC = UINavigationController(rootViewController: StartBuilder.makeRootVC())
         navVC.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
+    }
+    
+    func makeRootVC(_ vc: UIViewController){
+        UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: vc)
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

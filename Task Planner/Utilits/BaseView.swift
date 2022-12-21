@@ -21,7 +21,7 @@ class SetupView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         guard let view = self as? BaseView else { return }
-        view.backgroundColor = .AppColors.xF5FBFF
+        view.backgroundColor = AppTheme.current.backgroundColor
         view.setup()
         view.setupConstraints()
     }

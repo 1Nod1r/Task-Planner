@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C50F7B16898785D62B24C2E /* Pods_Task_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7640D08A6AACE58B43FB5C1 /* Pods_Task_Planner.framework */; };
+		8613D634292C03B600C4FB38 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613D633292C03B600C4FB38 /* LaunchViewModel.swift */; };
 		86167AF52914F2AC005574F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167AF42914F2AC005574F7 /* AppDelegate.swift */; };
 		86167AF72914F2AC005574F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167AF62914F2AC005574F7 /* SceneDelegate.swift */; };
 		86167AF92914F2AC005574F7 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86167AF82914F2AC005574F7 /* LaunchViewController.swift */; };
@@ -26,6 +27,10 @@
 		8641D1ED291FDF1900DBF857 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D1EC291FDF1900DBF857 /* TasksViewController.swift */; };
 		8641D1EF291FDF2900DBF857 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D1EE291FDF2900DBF857 /* TaskView.swift */; };
 		865E31E529212AEC002B2CB5 /* TaskTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E31E429212AEC002B2CB5 /* TaskTableHeader.swift */; };
+		865FD53E293099A800A199FC /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FD53D293099A800A199FC /* TaskDetail.swift */; };
+		867F1BE6294F094A00095BFE /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F1BE5294F094A00095BFE /* StartBuilder.swift */; };
+		868E3BD2292FA69300A65374 /* Uzum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E3BD1292FA69300A65374 /* Uzum.swift */; };
+		869CD68F292BFD9D00DBA1EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 869CD68E292BFD9D00DBA1EE /* GoogleService-Info.plist */; };
 		86A53BEA29226C0B00F6CE64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BE929226C0B00F6CE64 /* MainViewController.swift */; };
 		86A53BEC29226C1500F6CE64 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BEB29226C1500F6CE64 /* ProfileView.swift */; };
 		86A53BEE29226E0100F6CE64 /* ProfilePopupVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53BED29226E0100F6CE64 /* ProfilePopupVCViewController.swift */; };
@@ -40,6 +45,10 @@
 		86B33F56291E373A004E982E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F55291E373A004E982E /* OnboardingViewController.swift */; };
 		86CB20A3291511F5003ABAA1 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CB20A2291511F5003ABAA1 /* AppTextField.swift */; };
 		86CB20A529151320003ABAA1 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CB20A429151320003ABAA1 /* AppButton.swift */; };
+		86D3DC142952F28D008BD4CA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DC132952F28D008BD4CA /* Theme.swift */; };
+		86D3DC172952F359008BD4CA /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DC162952F359008BD4CA /* LightTheme.swift */; };
+		86D3DC192952F362008BD4CA /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DC182952F362008BD4CA /* DarkTheme.swift */; };
+		86D3DC1B2952F388008BD4CA /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DC1A2952F388008BD4CA /* AppTheme.swift */; };
 		86D56F7F2914F567009B995C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D56F7E2914F567009B995C /* ReusableView.swift */; };
 		86D56F812914F599009B995C /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D56F802914F599009B995C /* AlertViewController.swift */; };
 		86D56F832914F5B7009B995C /* UIColor + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D56F822914F5B7009B995C /* UIColor + Ext.swift */; };
@@ -58,11 +67,14 @@
 		86D56FA22914FC7B009B995C /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86D56F9D2914FC71009B995C /* Almarai-Regular.ttf */; };
 		86D56FA32914FC7B009B995C /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86D56F9E2914FC71009B995C /* Almarai-Light.ttf */; };
 		86D56FA529150D68009B995C /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D56FA429150D68009B995C /* VerificationButton.swift */; };
+		86DC674D2943423300B0F6D7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC674C2943423300B0F6D7 /* APIManager.swift */; };
 		86E23F1B291FFC1900470F48 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E23F1A291FFC1900470F48 /* MainTabController.swift */; };
 		86F44A79291E5B3A00280EBA /* EducationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F44A78291E5B3A00280EBA /* EducationTableCell.swift */; };
 		86F44A7C291E5C5F00280EBA /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F44A7B291E5C5F00280EBA /* EducationModel.swift */; };
 		86F44A7E291E5D1700280EBA /* EducationTableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F44A7D291E5D1700280EBA /* EducationTableDataProvider.swift */; };
 		86F44A80291E5E9200280EBA /* EducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F44A7F291E5E9200280EBA /* EducationViewModel.swift */; };
+		86F6A6CF2930C93600223F56 /* LaunchScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6A6CE2930C93600223F56 /* LaunchScreenDelegate.swift */; };
+		86F6A6D12930CAA200223F56 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6A6D02930CAA200223F56 /* BaseViewModelProtocol.swift */; };
 		86F6FB71292110FD00B51416 /* UIImage + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6FB70292110FD00B51416 /* UIImage + Ext.swift */; };
 		86F6FB732921111200B51416 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6FB722921111200B51416 /* CustomSegmentedControl.swift */; };
 		86F6FB762921133A00B51416 /* TasksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6FB752921133A00B51416 /* TasksTableCell.swift */; };
@@ -74,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		1D4264CF7C85D9A0A4F1CBCA /* Pods-Task Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task Planner.debug.xcconfig"; path = "Target Support Files/Pods-Task Planner/Pods-Task Planner.debug.xcconfig"; sourceTree = "<group>"; };
+		8613D633292C03B600C4FB38 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		86167AF12914F2AC005574F7 /* Task Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86167AF42914F2AC005574F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86167AF62914F2AC005574F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +107,10 @@
 		8641D1EC291FDF1900DBF857 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		8641D1EE291FDF2900DBF857 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		865E31E429212AEC002B2CB5 /* TaskTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableHeader.swift; sourceTree = "<group>"; };
+		865FD53D293099A800A199FC /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskDetail.swift; path = "Task Planner/Utilits/TaskDetail.swift"; sourceTree = SOURCE_ROOT; };
+		867F1BE5294F094A00095BFE /* StartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
+		868E3BD1292FA69300A65374 /* Uzum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uzum.swift; sourceTree = "<group>"; };
+		869CD68E292BFD9D00DBA1EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86A53BE929226C0B00F6CE64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		86A53BEB29226C1500F6CE64 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		86A53BED29226E0100F6CE64 /* ProfilePopupVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopupVCViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +125,10 @@
 		86B33F55291E373A004E982E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		86CB20A2291511F5003ABAA1 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		86CB20A429151320003ABAA1 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		86D3DC132952F28D008BD4CA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		86D3DC162952F359008BD4CA /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		86D3DC182952F362008BD4CA /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		86D3DC1A2952F388008BD4CA /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		86D56F7E2914F567009B995C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		86D56F802914F599009B995C /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		86D56F822914F5B7009B995C /* UIColor + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ext.swift"; sourceTree = "<group>"; };
@@ -126,11 +147,14 @@
 		86D56F9E2914FC71009B995C /* Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Light.ttf"; sourceTree = "<group>"; };
 		86D56F9F2914FC71009B995C /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-ExtraBold.ttf"; sourceTree = "<group>"; };
 		86D56FA429150D68009B995C /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
+		86DC674C2943423300B0F6D7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		86E23F1A291FFC1900470F48 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		86F44A78291E5B3A00280EBA /* EducationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationTableCell.swift; sourceTree = "<group>"; };
 		86F44A7B291E5C5F00280EBA /* EducationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationModel.swift; sourceTree = "<group>"; };
 		86F44A7D291E5D1700280EBA /* EducationTableDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationTableDataProvider.swift; sourceTree = "<group>"; };
 		86F44A7F291E5E9200280EBA /* EducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewModel.swift; sourceTree = "<group>"; };
+		86F6A6CE2930C93600223F56 /* LaunchScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenDelegate.swift; sourceTree = "<group>"; };
+		86F6A6D02930CAA200223F56 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		86F6FB70292110FD00B51416 /* UIImage + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Ext.swift"; sourceTree = "<group>"; };
 		86F6FB722921111200B51416 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		86F6FB752921133A00B51416 /* TasksTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableCell.swift; sourceTree = "<group>"; };
@@ -192,14 +216,17 @@
 		86167AF32914F2AC005574F7 /* Task Planner */ = {
 			isa = PBXGroup;
 			children = (
-				8641D1E8291FDED600DBF857 /* MainScreens */,
-				868AB032291FAD8B00F3824F /* Onboarding */,
+				86DC674B2943421800B0F6D7 /* Networking */,
+				86F6A6CD2930C92B00223F56 /* Delegates */,
+				865FD53C293099A000A199FC /* Models */,
+				86D30FB8292B9FC20025F534 /* ViewControllers */,
 				86D56F962914F8CA009B995C /* CustomViews */,
 				86167B0C2914F42E005574F7 /* Utilits */,
 				86167B0B2914F427005574F7 /* Extensions */,
 				86167B082914F2C1005574F7 /* Application */,
 				86167B092914F300005574F7 /* Resources */,
 				86167B022914F2AE005574F7 /* Info.plist */,
+				869CD68E292BFD9D00DBA1EE /* GoogleService-Info.plist */,
 			);
 			path = "Task Planner";
 			sourceTree = "<group>";
@@ -209,6 +236,7 @@
 			children = (
 				86167AF42914F2AC005574F7 /* AppDelegate.swift */,
 				86167AF62914F2AC005574F7 /* SceneDelegate.swift */,
+				867F1BE5294F094A00095BFE /* StartBuilder.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -216,6 +244,7 @@
 		86167B092914F300005574F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				86D3DC152952F34D008BD4CA /* Theme */,
 				86D56F9C2914FC6A009B995C /* Almarai-Bold.ttf */,
 				86D56F9F2914FC71009B995C /* Almarai-ExtraBold.ttf */,
 				86D56F9E2914FC71009B995C /* Almarai-Light.ttf */,
@@ -231,6 +260,7 @@
 			children = (
 				86167AF82914F2AC005574F7 /* LaunchViewController.swift */,
 				86D56F902914F6DA009B995C /* LaunchView.swift */,
+				8613D633292C03B600C4FB38 /* LaunchViewModel.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -260,6 +290,8 @@
 				86167B112914F4E8005574F7 /* LoadingViewProtocol.swift */,
 				86D56F7E2914F567009B995C /* ReusableView.swift */,
 				86D56F802914F599009B995C /* AlertViewController.swift */,
+				868E3BD1292FA69300A65374 /* Uzum.swift */,
+				86F6A6D02930CAA200223F56 /* BaseViewModelProtocol.swift */,
 			);
 			path = Utilits;
 			sourceTree = "<group>";
@@ -269,7 +301,6 @@
 			children = (
 				8629CAE42924EA6D005DCEC9 /* MyProfileViewController.swift */,
 				8629CAEF2924FCC7005DCEC9 /* MyProfileViewModel.swift */,
-				8629CAEB2924FBB9005DCEC9 /* MyProfileModel.swift */,
 				8629CAED2924FC54005DCEC9 /* MyProfileDataProvider.swift */,
 				8629CAE82924EF82005DCEC9 /* MyProfileViews */,
 			);
@@ -301,10 +332,20 @@
 				8641D1EC291FDF1900DBF857 /* TasksViewController.swift */,
 				86F6FB742921132C00B51416 /* Views */,
 				86F6FB77292118F300B51416 /* TaskTableDataProvider.swift */,
-				86F6FB792921192F00B51416 /* TaskModel.swift */,
 				86F6FB7B2921197500B51416 /* TaskViewModel.swift */,
 			);
 			path = TaskViewController;
+			sourceTree = "<group>";
+		};
+		865FD53C293099A000A199FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86F6FB792921192F00B51416 /* TaskModel.swift */,
+				865FD53D293099A800A199FC /* TaskDetail.swift */,
+				8629CAEB2924FBB9005DCEC9 /* MyProfileModel.swift */,
+				86F44A7B291E5C5F00280EBA /* EducationModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		868AB032291FAD8B00F3824F /* Onboarding */ = {
@@ -362,10 +403,29 @@
 				86B33F53291E35ED004E982E /* EducationViewController.swift */,
 				86F44A7F291E5E9200280EBA /* EducationViewModel.swift */,
 				86F44A7D291E5D1700280EBA /* EducationTableDataProvider.swift */,
-				86F44A7B291E5C5F00280EBA /* EducationModel.swift */,
 				86F44A7A291E5C4F00280EBA /* Views */,
 			);
 			path = EducationViewController;
+			sourceTree = "<group>";
+		};
+		86D30FB8292B9FC20025F534 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8641D1E8291FDED600DBF857 /* MainScreens */,
+				868AB032291FAD8B00F3824F /* Onboarding */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		86D3DC152952F34D008BD4CA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				86D3DC132952F28D008BD4CA /* Theme.swift */,
+				86D3DC162952F359008BD4CA /* LightTheme.swift */,
+				86D3DC182952F362008BD4CA /* DarkTheme.swift */,
+				86D3DC1A2952F388008BD4CA /* AppTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		86D56F962914F8CA009B995C /* CustomViews */ = {
@@ -383,6 +443,14 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		86DC674B2943421800B0F6D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86DC674C2943423300B0F6D7 /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		86F44A7A291E5C4F00280EBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +458,14 @@
 				86F44A78291E5B3A00280EBA /* EducationTableCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		86F6A6CD2930C92B00223F56 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				86F6A6CE2930C93600223F56 /* LaunchScreenDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		86F6FB742921132C00B51416 /* Views */ = {
@@ -421,6 +497,8 @@
 			dependencies = (
 			);
 			name = "Task Planner";
+			packageProductDependencies = (
+			);
 			productName = "Task Planner";
 			productReference = 86167AF12914F2AC005574F7 /* Task Planner.app */;
 			productType = "com.apple.product-type.application";
@@ -449,6 +527,8 @@
 				Base,
 			);
 			mainGroup = 86167AE82914F2AC005574F7;
+			packageReferences = (
+			);
 			productRefGroup = 86167AF22914F2AC005574F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -466,6 +546,7 @@
 				86D56FA22914FC7B009B995C /* Almarai-Regular.ttf in Resources */,
 				86D56FA32914FC7B009B995C /* Almarai-Light.ttf in Resources */,
 				86167B012914F2AE005574F7 /* LaunchScreen.storyboard in Resources */,
+				869CD68F292BFD9D00DBA1EE /* GoogleService-Info.plist in Resources */,
 				86D56FA02914FC7B009B995C /* Almarai-Bold.ttf in Resources */,
 				86D56FA12914FC7B009B995C /* Almarai-ExtraBold.ttf in Resources */,
 				86167AFE2914F2AE005574F7 /* Assets.xcassets in Resources */,
@@ -524,6 +605,8 @@
 				86D56F8B2914F630009B995C /* UINavigationController + Ext.swift in Sources */,
 				86D56F912914F6DA009B995C /* LaunchView.swift in Sources */,
 				86D56F892914F61D009B995C /* String + Ext.swift in Sources */,
+				86F6A6CF2930C93600223F56 /* LaunchScreenDelegate.swift in Sources */,
+				86D3DC172952F359008BD4CA /* LightTheme.swift in Sources */,
 				8629CAEC2924FBB9005DCEC9 /* MyProfileModel.swift in Sources */,
 				86D56F8D2914F642009B995C /* Userdefaults + Ext.swift in Sources */,
 				86F44A79291E5B3A00280EBA /* EducationTableCell.swift in Sources */,
@@ -534,6 +617,7 @@
 				86A53BEA29226C0B00F6CE64 /* MainViewController.swift in Sources */,
 				86B33F45291E2AC4004E982E /* StackView.swift in Sources */,
 				86D56F832914F5B7009B995C /* UIColor + Ext.swift in Sources */,
+				867F1BE6294F094A00095BFE /* StartBuilder.swift in Sources */,
 				86D56F872914F5E1009B995C /* UIViewController + Ext.swift in Sources */,
 				86167AF52914F2AC005574F7 /* AppDelegate.swift in Sources */,
 				86D56F952914F89B009B995C /* DefaultImageView.swift in Sources */,
@@ -544,13 +628,18 @@
 				86B33F56291E373A004E982E /* OnboardingViewController.swift in Sources */,
 				86167AF72914F2AC005574F7 /* SceneDelegate.swift in Sources */,
 				8629CAF02924FCC7005DCEC9 /* MyProfileViewModel.swift in Sources */,
+				86D3DC142952F28D008BD4CA /* Theme.swift in Sources */,
+				86F6A6D12930CAA200223F56 /* BaseViewModelProtocol.swift in Sources */,
 				86F6FB7A2921192F00B51416 /* TaskModel.swift in Sources */,
 				86AB3E94291E544A0057E075 /* EducationView.swift in Sources */,
 				86CB20A529151320003ABAA1 /* AppButton.swift in Sources */,
+				86D3DC192952F362008BD4CA /* DarkTheme.swift in Sources */,
 				86CB20A3291511F5003ABAA1 /* AppTextField.swift in Sources */,
 				8641D1ED291FDF1900DBF857 /* TasksViewController.swift in Sources */,
 				86E23F1B291FFC1900470F48 /* MainTabController.swift in Sources */,
 				86F6FB732921111200B51416 /* CustomSegmentedControl.swift in Sources */,
+				868E3BD2292FA69300A65374 /* Uzum.swift in Sources */,
+				86D3DC1B2952F388008BD4CA /* AppTheme.swift in Sources */,
 				86D56F852914F5CB009B995C /* UIView + Ext.swift in Sources */,
 				86D56F812914F599009B995C /* AlertViewController.swift in Sources */,
 				86167B122914F4E8005574F7 /* LoadingViewProtocol.swift in Sources */,
@@ -559,12 +648,14 @@
 				86F44A80291E5E9200280EBA /* EducationViewModel.swift in Sources */,
 				86D56F982914F8D7009B995C /* Label.swift in Sources */,
 				86F6FB762921133A00B51416 /* TasksTableCell.swift in Sources */,
+				865FD53E293099A800A199FC /* TaskDetail.swift in Sources */,
 				86F6FB7C2921197500B51416 /* TaskViewModel.swift in Sources */,
 				865E31E529212AEC002B2CB5 /* TaskTableHeader.swift in Sources */,
 				86F6FB7E29211C0000B51416 /* TaskSectionHeader.swift in Sources */,
 				86167B0E2914F459005574F7 /* BaseView.swift in Sources */,
 				86F44A7E291E5D1700280EBA /* EducationTableDataProvider.swift in Sources */,
 				86B33F4F291E34F1004E982E /* PresentationViewController.swift in Sources */,
+				8613D634292C03B600C4FB38 /* LaunchViewModel.swift in Sources */,
 				86A53BEC29226C1500F6CE64 /* ProfileView.swift in Sources */,
 				86B33F47291E2E85004E982E /* ContainerView.swift in Sources */,
 				86F6FB71292110FD00B51416 /* UIImage + Ext.swift in Sources */,
@@ -576,6 +667,7 @@
 				86D56F7F2914F567009B995C /* ReusableView.swift in Sources */,
 				8629CAEE2924FC54005DCEC9 /* MyProfileDataProvider.swift in Sources */,
 				8629CAEA2924EF94005DCEC9 /* MyProfileTableCell.swift in Sources */,
+				86DC674D2943423300B0F6D7 /* APIManager.swift in Sources */,
 				86167B102914F486005574F7 /* MainViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +743,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -704,6 +797,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -721,9 +815,9 @@
 				INFOPLIST_FILE = "Task Planner/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -751,9 +845,9 @@
 				INFOPLIST_FILE = "Task Planner/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

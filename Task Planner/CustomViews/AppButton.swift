@@ -9,10 +9,11 @@ import UIKit
 
 class AppButton: UIView {
     
+    private let buttonBackground = AppTheme.current.buttonTint
     
     init(title: String){
         super.init(frame: .zero)
-        backgroundColor = .AppColors.x2FD1C5
+        backgroundColor = buttonBackground
         cornerRadius = 8
         set(label: title)
     }
@@ -32,18 +33,18 @@ class AppButton: UIView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        setColor(.AppColors.x2FD1C5.withAlphaComponent(0.6))
+        setColor(buttonBackground.withAlphaComponent(0.6))
     }
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        setColor(.AppColors.x2FD1C5)
+        setColor(buttonBackground)
     }
 
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
-        setColor(.AppColors.x2FD1C5)
+        setColor(buttonBackground)
     }
     
     private func setColor(_ color: UIColor){

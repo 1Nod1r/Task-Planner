@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension UIViewController {
     
@@ -24,4 +25,20 @@ extension UIViewController {
         view.endEditing(true)
     }
     
+}
+
+
+extension UIViewController {
+    
+    func showProgress(){
+        ProgressHUD.show()
+    }
+    
+    func hideProgress(){
+        ProgressHUD.dismiss()
+    }
+    
+    func showErrorTo(error: String?){
+        ProgressHUD.showError(error ?? "Technical Issue")
+    }
 }

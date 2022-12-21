@@ -9,7 +9,7 @@ import UIKit
 
 class CustomSegmentedControl: UISegmentedControl{
     private let segmentInset: CGFloat = 5
-    private let segmentImage: UIImage? = UIImage(color: .AppColors.x2FD1C5)
+    private let segmentImage: UIImage? = UIImage(color: AppTheme.current.buttonTint)
 
     override func layoutSubviews(){
         super.layoutSubviews()

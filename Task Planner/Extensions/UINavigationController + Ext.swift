@@ -12,9 +12,18 @@ extension UINavigationController: UIGestureRecognizerDelegate {
         super.viewDidLoad()
         interactivePopGestureRecognizer?.delegate = self
         closeKeyboardOnOutsideTap()
+        changeStatusBar()
     }
 
     public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         return viewControllers.count > 1
     }
+    
+    private func changeStatusBar(){
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        let statusBarColor: UIColor = AppTheme.current.backgroundColor
+        statusBarView.backgroundColor = statusBarColor
+        view.addSubview(statusBarView)
+    }
+    
 }

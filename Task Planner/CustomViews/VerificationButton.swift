@@ -9,7 +9,7 @@ import UIKit
 
 class VerificationButton: BaseView {
     lazy var googleImage = DefaultImageView(frame: .zero)
-    lazy var googleTitle = Label(txtColor: .AppColors.x00394C, txtFont: UIFont(name: "Almarai-Bold", size: 18), txtLines: 1, txtAlignment: .left)
+    lazy var googleTitle = Label(txtColor: AppTheme.current.navigationTintColor, txtFont: UIFont(name: "Almarai-Bold", size: 18), txtLines: 1, txtAlignment: .left)
     
     init(imageName: String, title: String) {
         super.init(frame: .zero)
@@ -24,7 +24,7 @@ class VerificationButton: BaseView {
     func setup() {
         backgroundColor = .white
         cornerRadius = 12
-        borderColor = .AppColors.x2FD1C5
+        borderColor = AppTheme.current.buttonTint
         borderWidth = 1
         addSubviews(googleTitle, googleImage)
     }

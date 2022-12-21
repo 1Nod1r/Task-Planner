@@ -13,7 +13,7 @@ class ContainerView: UIView {
         super.init(frame: frame)
         cornerRadius = 24
         backgroundColor = .white
-        borderColor = .AppColors.xE4EDFF
+        borderColor = AppTheme.current.containerViewBorderColor
         borderWidth = 1
     }
     
