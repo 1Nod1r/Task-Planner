@@ -1,0 +1,6 @@
+framework module Pods_Task_Planner {
+  umbrella header "Pods-Task Planner-umbrella.h"
+
+  export *
+  module * { export * }
+}
